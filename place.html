@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visit Havasupai</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Visit Havasupai</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/havasu.webp" media="(min-width: 768px)">
+        <img src="images/havasu.webp" alt="Havasupai Waterfalls">
+      </picture>
+    </section>
+
+    <section class="info">
+      <h2>About Havasupai</h2>
+      <p>
+        Havasupai is a remote paradise nestled deep in the Grand Canyon in Arizona. Known for its vibrant blue-green waterfalls, including Havasu Falls and Mooney Falls, it's a breathtaking destination only accessible by hiking, horseback, or helicopter. The Havasupai Tribe has inhabited the area for centuries and carefully manages visitor access to preserve its beauty and cultural heritage.
+      </p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="emoji"></span></h2>
+      <p>Temperature: <span id="temp">85</span>°F</p>
+      <p>Wind Speed: <span id="speed">5</span> mph</p>
+      <p>Wind Chill: <span id="chill"></span></p>
+      <img src="images/sunpic.svg" alt="sunny icon" class="weather-icon" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
