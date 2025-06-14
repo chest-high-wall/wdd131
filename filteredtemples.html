@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filtered Temples</title>
+  <link rel="stylesheet" href="styles/filteredtemples.css" />
+  <link rel="stylesheet" href="styles/filteredtempleslarge.css" />
+  <script src="scripts/filteredtemples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Filtered Temple Album</h1>
+    <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav id="nav-menu">
+      <a href="#" data-filter="home">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temple Gallery</h1>
+    <div id="temples-container"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Tyler Andrew</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #004d40;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+}
+
+button#menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: block;
+}
+
+nav.navigation {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+nav.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+nav.navigation a:hover {
+  text-decoration: underline;
+}
+
+nav.show {
+  display: flex;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Hide the nav menu by default on mobile */
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Show the nav menu when it has the "open" class */
+#nav-menu.open {
+  display: flex;
+}
+
+/* === Improved Navigation Bar === */
+nav#nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background-color: #004d40;
+}
+
+nav#nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.6rem 1.4rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: #00695c;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+nav#nav-menu a:hover {
+  background-color: #00796b;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* === Temple Cards Layout === */
+#temples-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === Individual Card === */
+.temple-card {
+  background: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.temple-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.temple-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin: 0 0 0.75rem;
+  color: #2c0055;
+}
+
+.temple-card p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.temple-card p strong {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  color: #5e1e9c;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 640px) {
+  #nav-menu {
+    flex-direction: row !important;
+  }
+}
