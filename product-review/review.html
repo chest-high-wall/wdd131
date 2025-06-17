@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/form.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You</title>
+  <link rel="stylesheet" href="styles/form.css" />
 </head>
 <body>
   <header>
@@ -12,7 +12,7 @@
   </header>
 
   <main>
-    <section class="thank-you-box">
+    <section class="thank-you-box" role="region" aria-label="Submission Confirmation">
       <p>You have submitted <span id="reviewCount">0</span> review(s).</p>
     </section>
   </main>
@@ -28,5 +28,5 @@
     document.getElementById("reviewCount").textContent = count;
   </script>
 </body>
-
 </html>
+
