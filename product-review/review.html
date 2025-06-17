@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/form.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main>
+    <section class="thank-you-box">
+      <p>You have submitted <span id="reviewCount">0</span> review(s).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Tyler Andrew | WDD 131</p>
+  </footer>
+
+  <script>
+    let count = localStorage.getItem("reviewCount") || 0;
+    count = parseInt(count) + 1;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("reviewCount").textContent = count;
+  </script>
+</body>
+
+</html>
