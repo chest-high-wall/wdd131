@@ -1,4 +1,4 @@
-/* Reset basic styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,7 +64,7 @@ textarea {
   color: var(--text-color);
 }
 
-/* Placeholder fix for contrast */
+
 select option[hidden],
 ::placeholder {
   color: #444;

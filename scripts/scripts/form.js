@@ -1,4 +1,4 @@
-// Array of products to fill the dropdown
+
 const products = [
   { id: "fc-1888", name: "Flux Capacitor" },
   { id: "fc-2050", name: "Power Laces" },
@@ -7,10 +7,10 @@ const products = [
   { id: "jj-1969", name: "Warp Equalizer" }
 ];
 
-// Get reference to the select element
+
 const select = document.getElementById("productName");
 
-// Add product options to the select menu
+
 products.forEach(product => {
   const option = document.createElement("option");
   option.value = product.id;

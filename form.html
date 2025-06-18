@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Review</title>
 
-  <!-- Styles & Script -->
+  
   <link rel="stylesheet" href="styles/form.css" />
   <script src="scripts/form.js" defer></script>
 </head>
@@ -16,14 +16,14 @@
 
   <main>
     <form method="get" action="review.html">
-      <!-- ▸ Product Name -->
+      
       <label for="productName">Product Name</label>
       <select id="productName" name="productName" required>
-        <!-- placeholder: selectable? no; visible? yes -->
+        
         <option value="" selected hidden>Select a Product ...</option>
       </select>
 
-      <!-- ▸ Overall Rating -->
+      
       <fieldset>
         <legend>Overall Rating</legend>
         <label><input type="radio" name="rating" value="1" required> ☆</label>
@@ -33,11 +33,11 @@
         <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
       </fieldset>
 
-      <!-- ▸ Date of Installation -->
+      
       <label for="installDate">Installation Date</label>
       <input type="date" id="installDate" name="installDate" required>
 
-      <!-- ▸ Useful Features -->
+      
       <fieldset>
         <legend>Useful Features</legend>
         <label><input type="checkbox" name="features" value="Easy Install"> Easy Install</label>
@@ -45,15 +45,15 @@
         <label><input type="checkbox" name="features" value="Energy Efficient"> Energy Efficient</label>
       </fieldset>
 
-      <!-- ▸ Written Review -->
+      
       <label for="review">Your Review</label>
       <textarea id="review" name="review" rows="4" cols="50"></textarea>
 
-      <!-- ▸ User Name -->
+      
       <label for="userName">Your Name</label>
       <input type="text" id="userName" name="userName">
 
-      <!-- ▸ Submit -->
+      
       <input type="submit" value="Submit Review">
     </form>
   </main>
