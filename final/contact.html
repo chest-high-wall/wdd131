@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Southern Fly Fishing for inquiries or suggestions." />
+  <meta name="author" content="Tyler Andrew" />
+  <title>Contact | Southern Fly Fishing</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <!-- ===== Header / Nav ===== -->
+  <header>
+    <h1>Southern Fly Fishing</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Have a tip, question, or just want to say hi? Send us a message below!</p>
+
+      <form class="contact-form" method="get" action="thankyou.html">
+        <label for="name">
+          Name<span aria-hidden="true">*</span>
+          <input type="text" id="name" name="name" required />
+        </label>
+
+        <label for="email">
+          Email<span aria-hidden="true">*</span>
+          <input type="email" id="email" name="email" required />
+        </label>
+
+        <label for="message">
+          Message<span aria-hidden="true">*</span>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; <span id="year"></span> Southern Fly Fishing | Tyler Andrew</p>
+    <p><a href="attribution.html">Attributions</a></p>
+  </footer>
+
+  <!-- Footer Year Script -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

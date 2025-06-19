@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Expert fly-fishing tips for Southern waters." />
+  <meta name="author" content="Tyler Andrew" />
+  <title>Fly-Fishing Tips | Southern Fly Fishing</title>
+<link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Styles & Script -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <script defer type="module" src="scripts/tips.js"></script>
+</head>
+<body>
+  <!-- ===== Header / Nav ===== -->
+  <header>
+    <h1>Southern Fly Fishing</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tips.html" class="active">Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h2>Expert Fly-Fishing Tips</h2>
+      <p>Refine your technique and discover the best Southern waters to cast your line.</p>
+      <img src="images/stream.webp"
+           alt="Fly-fishing a clear Southern stream"
+           loading="lazy"
+           width="600" height="300" />
+    </section>
+
+    <!-- Tips Grid -->
+    <section class="highlights">
+      <h3>Pro Tips</h3>
+      <div id="tips-section" class="tips-container"></div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; <span id="year"></span> Southern Fly Fishing | Tyler Andrew</p>
+    <p><a href="attribution.html">Attributions</a></p>
+  </footer>
+
+  <!-- Footer Year Script -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

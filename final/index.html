@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the beauty and techniques of fly fishing in Southern waters." />
+  <meta name="author" content="Tyler Andrew" />
+  <title>Southern Fly Fishing | Home</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <h1>Southern Fly Fishing</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section with Background Image -->
+    <section class="hero">
+      <h2>Welcome to Southern Fly Fishing</h2>
+      <p>Discover top fishing spots, expert tips, and gear guides for fly fishing across the southern U.S.</p>
+    </section>
+
+    <!-- Feature Cards -->
+    <section class="features">
+      <h3>Explore Our Site</h3>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <p class="emoji">🎣</p>
+          <h4>Techniques</h4>
+          <p>Learn fly fishing methods tailored to Southern waters.</p>
+        </div>
+        <div class="feature-card">
+          <p class="emoji">📍</p>
+          <h4>Locations</h4>
+          <p>Discover top rivers, creeks, and lakes to cast your line.</p>
+        </div>
+        <div class="feature-card">
+          <p class="emoji">🧰</p>
+          <h4>Gear</h4>
+          <p>Find quality gear that actually performs on the water.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Southern Fly Fishing | Tyler Andrew</p>
+    <p><a href="attributions.html">Attributions</a></p>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Visit count using localStorage
+    const visitDisplay = document.createElement("p");
+    let visits = Number(localStorage.getItem("visits")) || 0;
+    visits++;
+    localStorage.setItem("visits", visits);
+    visitDisplay.textContent = `You've visited this site ${visits} time${visits === 1 ? "" : "s"}!`;
+    document.querySelector("footer").appendChild(visitDisplay);
+  </script>
+</body>
+</html>
